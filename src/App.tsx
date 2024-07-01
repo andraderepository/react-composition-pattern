@@ -58,8 +58,6 @@ function App() {
             category='Convite'
             timePublish='3 min'
         />
-        <Notification.Actions>
-        </Notification.Actions>
       </Notification.Card>
     </div>
   );
