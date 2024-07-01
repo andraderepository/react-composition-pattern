@@ -15,7 +15,7 @@ function ImageCard(props: React.ImgHTMLAttributes<HTMLImageElement>) {
 function App() {
   return (
     <div className='container center'>
-      <Notification.Root>
+      <Notification.Card>
         <Notification.Image image={ImageCard} />
         <Notification.Content 
             desc='Você recebeu um convite para fazer parte da nossa empresa!'
@@ -25,9 +25,9 @@ function App() {
         <Notification.Actions>
           <Notification.Action icon={ClearIcon} />
         </Notification.Actions>
-      </Notification.Root>
+      </Notification.Card>
 
-      <Notification.Root>
+      <Notification.Card>
         <Notification.Image image={ImageCard} />
         <Notification.Content 
             desc='Você recebeu um convite para fazer parte da nossa empresa!'
@@ -37,7 +37,30 @@ function App() {
         <Notification.Actions>
           <Notification.Action icon={CheckIcon} />
         </Notification.Actions>
-      </Notification.Root>
+      </Notification.Card>
+
+      <Notification.Card>
+        <Notification.Image image={ImageCard} />
+        <Notification.Content 
+            desc='Você recebeu um convite para fazer parte da nossa empresa!'
+            category='Convite'
+            timePublish='3 min'
+        />
+        <Notification.Actions>
+          <Notification.Action icon={ClearIcon} />
+          <Notification.Action icon={CheckIcon} />
+        </Notification.Actions>
+      </Notification.Card>
+
+      <Notification.Card>
+        <Notification.Content 
+            desc='Você recebeu um convite para fazer parte da nossa empresa!'
+            category='Convite'
+            timePublish='3 min'
+        />
+        <Notification.Actions>
+        </Notification.Actions>
+      </Notification.Card>
     </div>
   );
 }

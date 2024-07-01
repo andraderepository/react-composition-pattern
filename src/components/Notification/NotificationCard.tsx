@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react'
 
-interface NotificationRootProps {
+interface NotificationCardProps {
     children: ReactNode
 }
 
-export function NotificationRoot({ children }: NotificationRootProps) {
+export function NotificationCard({ children }: NotificationCardProps) {
     return (
         <div className='card gap-3'>
             {children}
